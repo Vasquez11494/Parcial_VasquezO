@@ -26,7 +26,18 @@ abstract class Conexion
             echo "No se pudo establecer conexión.";
         }
     }
+    public function ejecutar($sql)
+    {
+        $conexion = self::conectar();
+        $sentencia = $conexion->prepare($sql);
+        $resultado = $sentencia->execute();
+        self::$conexion = null;
 
-    
+        return [
+            "resultado" => $resultado,
+        ];
+
+    }
+
 }
 Conexion::verificarConexion();
