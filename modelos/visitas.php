@@ -17,13 +17,13 @@ class  Visitas extends Conexion {
         $this->vis_nombre = $args['vis_nombre'] ?? '' ;
         $this->vis_apellido = $args['vis_apellido'] ?? '' ;
         $this->vis_procedencia = $args ['vis_procedencia'] ?? '' ;
-        $this->vis_fechaingreso = $args ['vis_fechaingreso'] ?? null ;
-        $this->vis_fechasalida = $args ['vis_fechasalida'] ?? null ;
+        $this->vis_fechaingreso = $args ['vis_fechaingreso'] ?? '' ;
+        $this->vis_fechasalida = $args ['vis_fechasalida'] ?? '' ;
         $this->vis_motivo = $args['vis_motivo'] ?? '' ;
     }
 
     public function guardar(){
-        $sql = "INSERT into visitas (vis_nombre, vis_apellido, vis_procedencia, vis_fechaingreso, vis_fechasalida, vis_motivo) values ('$this->vis_nombre','$this->vis_apellido','$this->vis_procedencia','$this->vis_fechaingreso','$this->vis_fechasalida','$this->vis_motivo')";
+        $sql = "INSERT INTO visita (vis_nombre, vis_apellido, vis_procedencia, vis_fechaingreso, vis_fechasalida, vis_motivo) values ('$this->vis_nombre','$this->vis_apellido','$this->vis_procedencia','$this->vis_fechaingreso','$this->vis_fechasalida','$this->vis_motivo')";
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }

@@ -40,4 +40,4 @@ abstract class Conexion
     }
 
 }
-Conexion::verificarConexion();
+// Conexion::verificarConexion();
