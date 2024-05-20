@@ -27,4 +27,5 @@ class  Visitas extends Conexion {
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
+
 }
