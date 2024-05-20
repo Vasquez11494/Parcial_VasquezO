@@ -4,7 +4,7 @@ include_once "../templates/header.php"; ?>
 
 <h1 class="text-center">Ingresar Visitantes</h1>
 <div class="row justify-content-center">
-    <form action="../../controladores/clientes/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
+    <form action="../../controladores/clientes/guardar.php" method="POST" class="border bg-light shadow rounded p-3 col-lg-6">
         <div class="row mb-3">
             <div class="col">
                 <label for="vis_nombre">Nombre del visitante</label>
@@ -20,19 +20,25 @@ include_once "../templates/header.php"; ?>
         <div class="row mb-3">
             <div class="col">
                 <label for="vis_procedencia">Lugar de Procedencia</label>
-                <input type="tex" name="vis_procedencia" id="vis_procedencia" class="form-control" placeholder="Ej. Las Flores, Guatemala" required>
+                <input type="text" name="vis_procedencia" id="vis_procedencia" class="form-control" placeholder="Ej. Las Flores, Guatemala" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
                 <label for="vis_fechaingreso">Fecha y hora de ingreso</label>
-                <input type="datetime" name="vis_fechaingreso" id="vis_fechaingreso"  class="form-control" required>
+                <input type="datetime-local" name="vis_fechaingreso" id="vis_fechaingreso"  class="form-control" required>
             </div>
         </div>
         <div class="row mb-3">
             <div class="col">
                 <label for="vis_fechasalida">Fecha y hora de Salida</label>
-                <input type="datetime" name="vis_fechasalida" id="vis_fechasalida"  class="form-control" required>
+                <input type="datetime-local" name="vis_fechasalida" id="vis_fechasalida"  class="form-control" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+                <label for="vis_motivo">Motivo de la Visita</label>
+                <input type="text" name="vis_motivo" id="vis_motivo" class="form-control" placeholder="Ej. Entregar Correspondencia" required>
             </div>
         </div>
         <div class="row mb-3">

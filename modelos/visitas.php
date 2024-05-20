@@ -23,7 +23,7 @@ class  Visitas extends Conexion {
     }
 
     public function guardar(){
-        $sql = "INSERT into visita (vis_nombre, vis_apellido, vis_procedencia, vis_fechaingreso, vis_fechasalida) values ('$this->vis_nombre','$this->vis_apellido','$this->vis_procedencia','$this->vis_fechaingreso','$this->vis_fechasalida')";
+        $sql = "INSERT into visitas (vis_nombre, vis_apellido, vis_procedencia, vis_fechaingreso, vis_fechasalida, vis_motivo) values ('$this->vis_nombre','$this->vis_apellido','$this->vis_procedencia','$this->vis_fechaingreso','$this->vis_fechasalida','$this->vis_motivo')";
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }

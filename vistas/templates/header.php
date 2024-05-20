@@ -10,4 +10,4 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </body>
 <?php include_once 'navbar.php'?>
-<div class="container mt-5 pt-5"></div>
+<div class="container mt-2 pt-5"></div>
