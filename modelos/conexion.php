@@ -26,5 +26,7 @@ abstract class Conexion
             echo "No se pudo establecer conexión.";
         }
     }
+
+    
 }
 Conexion::verificarConexion();
