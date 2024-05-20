@@ -42,10 +42,11 @@ if ($_POST['vis_nombre'] == '' || $_POST['vis_apellido'] == '' || $_POST['vis_pr
     }
 }
 
+// echo "<pre>";
+// print_r($nuevavisita);
+// echo "</pre>";
+
 $alertas = ['danger', 'success', 'warning'];
-echo "<pre>";
-print_r($nuevavisita);
-echo "</pre>";
 include_once '../../vistas/templates/header.php'; ?>
 
 <div class="row justify-content-center">
